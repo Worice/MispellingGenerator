@@ -25,9 +25,9 @@ public class MispellingGenerator{
     //Iterate over Data
     ListIterator<String> it = list.listIterator();
     while(it.hasNext()){
-        ErrorGenerator errGen = new ErrorGenerator(it.next(), 1);
+        ErrorGenerator errGen = new ErrorGenerator(it.next(), Integer.parseInt(args[1]), Integer.parseInt(args[2]));
         errGen.applyError();
-        System.out.println();
+        //System.out.println();
     }
     }
 }
