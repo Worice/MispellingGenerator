@@ -1,3 +1,5 @@
+/* java MispellingGenerator errorProbability generatedSentences minimun tokenlenght */
+
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 import java.util.Random;
@@ -25,7 +27,7 @@ public class MispellingGenerator{
     //Iterate over Data
     ListIterator<String> it = list.listIterator();
     while(it.hasNext()){
-        ErrorGenerator errGen = new ErrorGenerator(it.next(), Integer.parseInt(args[1]), Integer.parseInt(args[2]));
+        ErrorGenerator errGen = new ErrorGenerator(it.next(), Integer.parseInt(args[1]), Integer.parseInt(args[2]), Integer.parseInt(args[3]), Integer.parseInt(args[4]));
         errGen.applyError();
         //System.out.println();
     }
