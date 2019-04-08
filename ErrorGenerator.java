@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.StringTokenizer;
 import java.lang.StringBuilder;
-import info.debatty.java.stringsimilarity.*;
+//import info.debatty.java.stringsimilarity.*;
 
 public class ErrorGenerator{
 
@@ -105,7 +105,7 @@ public class ErrorGenerator{
                 strBld.setCharAt(ch1, strBld.charAt(ch2));
                 strBld.setCharAt(ch2, ch3);
                 tmp = strBld.toString();
-            }while((getStringsDistance(token, tmp) / 2) > dist );   
+            }while((getStringsDistance(token, tmp) / 8) > dist );   
         System.out.printf("%s ", tmp);
         }
         else{
