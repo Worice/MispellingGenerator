@@ -41,7 +41,7 @@ public class ErrorGenerator{
     }
 
     public void applyError(){
-        rows *= st.countTokens();
+        //rows *= st.countTokens();
         Random err = new Random();
             for(int i = 0; i < rows; ++i){
                 System.out.printf("%s\t", sentence); 
